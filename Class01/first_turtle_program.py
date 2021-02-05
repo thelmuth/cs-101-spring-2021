@@ -3,6 +3,8 @@ from turtle import *
 leo = Turtle()
 shirley = Turtle()
 
+leo.shape("turtle")
+
 leo.speed(1)
 leo.forward(80)
 leo.width(3)
