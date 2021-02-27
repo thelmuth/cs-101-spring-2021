@@ -172,9 +172,10 @@ class Audio():
 
     def play(self):
         """
-        Plays the Audio Object's audio segment
+        Plays the Audio Object's audio segment, if it isn't empty.
         """
-        play(self._audioseg)
+        if len(self._audioseg) > 0:
+            play(self._audioseg)
             
 
     def __add__(self, other_audio):
